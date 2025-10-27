@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Réservation — Hôtel Gloria</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .btnn {
+    background: #f0c14b;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+   .btnn:hover {
+    background: #d8a738;
+  }
+
+
+    .note{
+      color: white;
+    }
+    .reservation-form label{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="mini-header">
+    <a href="index.html" class="btn">← Retour</a>
+    <h1>Réservation</h1>
+  </header>
+
+  <main class="reservation-main">
+    <section aria-labelledby="formTitle" class="reservation-section">
+      <h2 id="formTitle">Formulaire de réservation</h2>
+      <!-- NOTE : action="process_reservation.php" doit être remplacé par l'URL de traitement backend ou un service (ex: Formspree) -->
+      <form class="reservation-form" action="confirmation.html" method="post" novalidate>
+        <label>Nom complet<input type="text" name="name" required placeholder="Ton nom complet" aria-required="true">
+        </label>
+
+        <label>Email<input type="email" name="email" required placeholder="email@exemple.com">
+        </label>
+
+        <label>Téléphone<input type="tel" name="phone" required placeholder="+243...">
+        </label>
+
+        <div class="date-row">
+          <label>
+            Date d'arrivée<input type="date" name="arrival" required>
+          </label>
+
+          <label>Date de départ
+            <input type="date" name="departure" required>
+          </label>
+        </div>
+
+        <label>
+          Message / Remarques
+          <textarea name="message" rows="4" placeholder="Préférences, nombre de personnes, Missions, attentes etc."></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btnn">Envoyer la demande</button>
+          <!-- Lien WhatsApp alternatif -->
+          <a class="btnn" href="https://wa.me/243842079074?text=Bonjour%20H%C3%B4tel%20Gloria%20-%20Je%20veux%20r%C3%A9server" target="_blank" rel="noopener">Réserver via WhatsApp</a>
+        </div>
+      </form>
+      <p class="note">Après soumission, le personnel vous contactera pour confirmer la disponibilité. Pour une réservation instantanée, utilisez WhatsApp.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class='btnn' href="presenteToiSimon.html">A PROPOS DE MOI</a>
+    <div class="footer-inner">
+      <p>© <span id="year2"></span> Hôtel Gloria — Mbujimayi</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

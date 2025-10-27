@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hôtel Gloria — Mbujimayi</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Hôtel Gloria à Mbujimayi — hébergement, tourisme local, conférences et mariages.">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header" role="banner" aria-label="En-tête de l'hôtel"
+          style="background-image: url('images/header.jpg');">
+    <!-- Remplace images/header.jpg par ton image. -->
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1 class="hotel-title">Hôtel Gloria</h1>
+      <p class="slogan">Confort et hospitalité au coeur de Mbujimayi</p>
+      <div class="header-actions">
+        <a class="btn" href="reservation.html">Réserver</a>
+        <!-- Remplace le numéro WhatsApp ci-dessous par le tien (format international, sans +) -->
+        <a class="btn" href="https://wa.me/243842079074?text=Bonjour%20H%C3%B4tel%20Gloria%20-%20Je%20veux%20r%C3%A9server" target="_blank" rel="noopener">Réserver via WhatsApp</a>
+        <a class='btn' href="presentation.html">Présentation de l'hotel Gloria</a>
+        <a class='btn' href="presenteToiSimon.html">A PROPOS DE MOI</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bande d'information défilante -->
+  <section class="info-band" aria-hidden="false" aria-label="Informations importantes">
+    <div class="info-track">
+      <span>• Récupération des touristes à l’aéroport à l’arrivée à Mbujimayi •</span>
+      <span>• Service de tourisme local disponible •</span>
+      <span>• Organisation de conférences •</span>
+      <span>• Fêtes de mariage et cérémonies •</span>
+    </div>
+  </section>
+
+  <main>
+    <!-- CAROUSEL -->
+    <section class="carousel-section" aria-label="Galerie photos">
+      <div class="carousel" id="carousel" aria-roledescription="carousel">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Image précédente">&#10094;</button>
+        <div class="carousel-track" id="track">
+          <!-- Remplace les noms d'image ici par les tiens (images/slide1.jpg etc.) -->
+          <div class="slide"><img src="images/gloria01.jpg" alt="Vue extérieure de l'Hôtel Gloria"></div>
+          <div class="slide"><img src="images/gloria02.jpg" alt="Chambre double confortable"></div>
+          <div class="slide"><img src="images/gloria03.jpg" alt="Salle à manger de l'hôtel"></div>
+          <div class="slide"><img src="images/gloria04.jpg" alt="Suite de l'hôtel"></div>
+          <div class="slide"><img src="images/gloria05.jpg" alt="Suite de l'hôtel"></div>
+          
+        </div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Image suivante">&#10095;</button>
+        <div class="carousel-dots" id="dots"></div>
+      </div>
+    </section>
+
+    <!-- MENUS -->
+    <section class="menus" aria-labelledby="menusTitle">
+      <h2 id="menusTitle">Menus — Repas & Boissons</h2>
+      <div class="menu-cards">
+        <article class="menu-card">
+          <h3>Petit-déjeuner</h3>
+          <p>Assortiment local & continental : café, thé, fruits, pain, beignets.</p>
+          <img src="images/menu1.jpg" alt="Exemple de nos plats 1">
+          <img src="images/menu2.jpg" alt="Exemple de nos plats 2">
+          <img src="images/menu3.jpg" alt="Exemple de nos plats 3">
+        </article>
+    
+        <article class="menu-card">
+          <h3>Déjeuner & Dîner</h3>
+          <p>Plats locaux et internationaux, plats du jour préparés avec soin.</p>
+          <img src="images/dejeu1.jpg" alt="Exemple de nos plats 1">
+          <img src="images/dejeu2.jpg" alt="Exemple de nos plats 2">
+          <img src="images/dejeu3.jpg" alt="Exemple de nos plats 3">
+        </article>
+    
+        <article class="menu-card">
+          <h3>Boissons</h3>
+          <p>Jus frais, sodas, vins et boissons chaudes.</p>
+          <img src="images/bois1.jpg" alt="Exemple de nos plats 1">
+          <img src="images/bois2.jpg" alt="Exemple de nos plats 2">
+          <img src="images/bois3.jpg" alt="Exemple de nos plats 3">
+        </article>
+
+        <article class="menu-card">
+          <h3>Boissons</h3>
+          <p>Jus frais, sodas, vins et boissons chaudes.</p>
+          <img src="images/plat1.jpg" alt="Exemple de nos plats 1">
+          <img src="images/bois4.webp" alt="Exemple de nos plats 2">
+          <img src="images/dejeu4.webp" alt="Exemple de nos plats 3">
+        </article>
+    
+      </div>
+    </section>
+      <!-- Si tu veux, remplace ou ajoute des images: -->
+      <!-- <img src="images/menu1.jpg" alt="Exemple de plat"> -->
+      <!-- <img src="images/menu1.jpg" alt="Exemple de nos plats 1">
+      <img src="images/menu2.jpg" alt="Exemple de nos plats 2">
+      <img src="images/menu3.jpg" alt="Exemple de nos plats 3"> -->
+    </section>
+
+    <!-- SERVICES (lien vers page séparée) -->
+    <section class="services-preview" aria-labelledby="servicesTitle">
+      <h2 id="servicesTitle">Services</h2>
+      <p>Nous proposons : tourisme, conférences, organisation de mariages et plus.</p>
+      <a class="btn" href="services.html">Voir tous les services</a>
+      <!-- Note: page services.html n'est pas fournie ici, mais tu peux créer un fichier similaire -->
+    </section>
+
+    <!-- Bande contact rapide -->
+    <section class="contact-cta" aria-label="Contact & réservation rapide">
+      <p>Besoin d'aide ? Contactez-nous</p>
+      <div class="contact-buttons">
+        <a class="btn" href="reservation.html">🔵Formulaire de réservation</a>
+        <a class="btn" href="https://wa.me/243842079074?text=Bonjour%20H%C3%B4tel%20Gloria" target="_blank" rel="noopener">🔵WhatsApp</a>
+        <a class="btn" href="https://web.facebook.com/p/HOTEL-Gloria-mbujimayi-100063773071732/?_rdc=1&_rdr#" target="_blank">🔵Facebook</a>
+        <a class="btn" href="https://www.instagram.com/hotel_gloriambujimayi/">🔵Instagram</a>
+
+
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>•© <span id="year"></span> Hôtel Gloria — Mbujimayi</p>
+      <p>Adresse : Avenue Fatshi n° ...../Quartier ....../Commune de la Kanshi, Mbujimayi • Tel : +243 842079074</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS: carousel & small helpers -->
+  <script>
+    // Mise à jour de l'année dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple carousel vanilla JS
+    (function() {
+      const track = document.getElementById('track');
+      const slides = Array.from(track.children);
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsContainer = document.getElementById('dots');
+      let currentIndex = 0;
+      let interval = null;
+      const slideWidth = () => slides[0].getBoundingClientRect().width;
+
+      // position slides horizontally
+      const setSlidePositions = () => {
+        slides.forEach((slide, index) => {
+          slide.style.left = (index * 100) + '%';
+        });
+      };
+
+      const createDots = () => {
+        slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.className = 'dot';
+          dot.setAttribute('aria-label', 'Aller à la diapositive ' + (i + 1));
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        });
+        updateDots();
+      };
+
+      const updateDots = () => {
+        const dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+      };
+
+      const goToSlide = (index) => {
+        currentIndex = (index + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+        updateDots();
+      };
+
+      prevBtn.addEventListener('click', () => {
+        goToSlide(currentIndex - 1);
+        restartAuto();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        goToSlide(currentIndex + 1);
+        restartAuto();
+      });
+
+      // Auto slide
+      const startAuto = () => {
+        interval = setInterval(() => goToSlide(currentIndex + 1), 5000);
+      };
+      const restartAuto = () => {
+        clearInterval(interval);
+        startAuto();
+      };
+
+      // Responsiveness: re-set positions on resize
+      window.addEventListener('resize', setSlidePositions);
+
+      // Init
+      setSlidePositions();
+      createDots();
+      goToSlide(0);
+      startAuto();
+    })();
+  </script>
+</body>
+</html>
